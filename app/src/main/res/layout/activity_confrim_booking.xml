@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConfrimBooking">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="160dp">
+
+        <EditText
+            android:id="@+id/bk_plateNo"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="200dp"
+            android:ems="10"
+            android:hint="Car Plate Number (KAA 111A)"
+            android:inputType="text"
+            android:paddingTop="20dp"
+            android:textAllCaps="true" />
+
+        <Spinner
+            android:id="@+id/bk_models"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:spinnerMode="dialog"
+            android:entries="@array/cars_array"
+            android:paddingTop="20dp"
+            android:prompt="@string/cars_list" />
+
+        <Spinner
+            android:id="@+id/bk_rate"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:spinnerMode="dialog"
+            android:ems="10"
+            android:entries="@array/rate_array"
+            android:paddingTop="20dp"
+            android:prompt="@string/hour_choice" />
+
+        <ProgressBar
+            android:id="@+id/progress_booking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_book"
+            android:layout_width="182dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/button_style"
+            android:ems="10"
+            android:text="Confirm"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/parkid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="80dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:visibility="invisible"
+            android:text="" />
+
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BookingInfo">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView"
+        android:textSize="18sp"
+        android:layout_alignStart="@+id/btn_confirm_booking"
+        android:text="Name:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="29dp"
+        android:text=""
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="70dp"
+        android:text="Brief description"
+        android:id="@+id/brief"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/brief"
+        android:layout_marginTop="100dp"
+        android:text=""
+        android:textSize="16sp"
+        android:id="@+id/tv_brief"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="150dp"
+        android:text="Parking Rates: "
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/perHour"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="190dp"
+        android:text="1. Per Hour: "
+        android:textStyle="bold"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/tv_hour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/perHour"
+        android:layout_alignEnd="@+id/brief"
+        android:text=""
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/perDay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/brief"
+        android:layout_marginTop="231dp"
+        android:text="2. Per Day:"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/perDay"
+        android:layout_alignEnd="@+id/brief"
+        android:text=""
+        android:textSize="15sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="285dp"
+        android:text="Facility Details: "
+        android:id="@+id/details"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:id="@+id/ic_security"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="325dp"
+        android:src="@drawable/ic_security" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ic_security"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="65dp"
+        android:text="Security Present? "
+        android:textSize="15dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_security"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ic_security"
+        android:layout_marginLeft="140dp"
+        android:layout_toEndOf="@+id/ic_security"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/ic_camera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="240dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="380dp"
+        android:src="@drawable/ic_camera" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ic_camera"
+        android:layout_toEndOf="@+id/ic_camera"
+        android:text="Surveillance Present? "
+        android:layout_marginLeft="15dp"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_survey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ic_camera"
+        android:layout_marginLeft="170dp"
+        android:layout_toEndOf="@+id/ic_camera"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <ImageView
+        android:id="@+id/ic_hours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+       android:layout_marginLeft="20dp"
+        android:layout_marginTop="435dp"
+        android:src="@drawable/ic_hours" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ic_hours"
+        android:layout_toEndOf="@+id/ic_hours"
+        android:layout_marginLeft="18dp"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:text="Operating hours?" />
+
+    <TextView
+        android:id="@+id/tv_operate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/ic_hours"
+        android:layout_marginLeft="140dp"
+        android:layout_toEndOf="@+id/ic_hours"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/caps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="503dp"
+        android:layout_alignParentTop="true"
+        android:text="Parking Space Available: "
+        android:layout_marginLeft="20dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_capacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/caps"
+        android:layout_marginLeft="5dp"
+        android:layout_toEndOf="@id/caps"
+        android:text=""
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+
+    <Button
+        android:id="@+id/btn_confirm_booking"
+        android:layout_width="150dp"
+        android:background="@drawable/button_style"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btn_exit"
+        android:layout_marginStart="20dp"
+        android:text="Confirm Booking" />
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_style"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="14dp"
+        android:layout_marginEnd="20dp"
+        android:text="EXIT TO MAP" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_confirm_booking"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="On clicking Confirm Booking, You have Confirmed booking in Selected Location."
+        android:textSize="13sp"
+        android:textStyle="italic" />
+
+</RelativeLayout>

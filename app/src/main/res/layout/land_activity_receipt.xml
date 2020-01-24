@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Receipt">
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:layout_width="691dp"
+        android:layout_height="606dp"
+        android:layout_marginRight="25dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="90dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/receiptfinal" />
+
+
+    <TextView
+        android:id="@+id/motto"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="60dp"
+        android:gravity="center"
+        android:text="Park Poa. BOOK || RESERVE || PARK"
+        android:textSize="16sp"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:id="@+id/back_menu"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="19dp"
+        android:gravity="end"
+        android:layout_marginRight="15dp"
+        android:text="Go Back to Map >>"
+        android:textSize="15sp"
+        android:textStyle="italic" />
+
+
+    <TextView
+        android:layout_width="126dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="217dp"
+        android:layout_marginStart="61dp"
+        android:gravity="center"
+        android:text="997 -234- 6979"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rec_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="128dp"
+        android:rotation="90"
+        android:text=""
+        android:textSize="17sp"
+        android:textStyle="bold" />
+</RelativeLayout>

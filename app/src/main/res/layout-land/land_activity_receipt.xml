@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Receipt">
+
+    <ImageView
+        android:layout_width="691dp"
+        android:layout_height="333dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="20dp"
+        android:foregroundGravity="center"
+        android:src="@drawable/receipt" />
+
+    <TextView
+        android:id="@+id/rec_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/motto"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="74dp"
+        android:text=""
+        android:textSize="21sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/motto"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="87dp"
+        android:layout_marginStart="44dp"
+        android:text="Park Poa. BOOK || rESERVE || PARK"
+        android:textSize="18sp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="81dp"
+        android:layout_marginTop="160dp"
+        android:text="997 -  234 - 6979"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

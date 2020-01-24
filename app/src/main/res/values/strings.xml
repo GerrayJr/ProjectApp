@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Park Poa</string>
+    <string name="cars_list">Choose Your Car Model</string>
+    <string-array name="cars_array">
+
+        <item>Toyota</item>
+        <item>Mercedes Benz</item>
+        <item>Volvo</item>
+        <item>Nissan</item>
+        <item>Volkswagen</item>
+        <item>Honda</item>
+        <item>Others</item>
+        <item>I rather not Specify</item>
+    </string-array>
+
+    <string name="hour_choice">Choice Payment Rate</string>
+    <string-array name="rate_array">
+        <item>Per Hour </item>
+        <item>Full Day </item>
+    </string-array>
+
+</resources>
